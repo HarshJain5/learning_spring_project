@@ -839,7 +839,7 @@ Database
 
 # Summary
 
-- Repository is used to interact with the database.
+- Repository is  used to interact with the database.
 - Service is used to write business logic.
 - `JpaRepository` provides built-in CRUD methods.
 - `@Service` marks a class as the service layer.

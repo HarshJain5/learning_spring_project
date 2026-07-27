@@ -2,6 +2,7 @@ package com.spring.first_spring_proj.controllers;
 
 import com.spring.first_spring_proj.entities.Student;
 import com.spring.first_spring_proj.service.StudentService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class StudentController {
     }
 
     @PostMapping("/student/add")
-    public Student addStudent(@RequestBody Student student){
+    public Student addStudent(@RequestBody @Valid Student student){
         return this.studentService.addStudent(student);
     }
 

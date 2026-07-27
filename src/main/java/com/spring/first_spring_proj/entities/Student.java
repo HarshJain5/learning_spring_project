@@ -1,6 +1,7 @@
     package com.spring.first_spring_proj.entities;
 
     import jakarta.persistence.*;
+    import jakarta.validation.constraints.NotBlank;
     import lombok.Getter;
     import lombok.Setter;
 
@@ -15,8 +16,10 @@
         private long id;
 
         @Column(name = "first_name",nullable = false)
+        @NotBlank
         private String firstName;
 
         @Column(name = "last_name",nullable = false)
+        @NotBlank
         private String lastName;
     }
