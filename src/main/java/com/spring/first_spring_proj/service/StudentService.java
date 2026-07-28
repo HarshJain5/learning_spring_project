@@ -27,9 +27,6 @@ public class StudentService {
     }
     public Student updateStudentById(Student student){
         Student existingStudent = this.getStudentById(student.getId());
-        if (existingStudent==null){
-            return null;
-        }
         existingStudent.setFirstName(student.getFirstName());
         existingStudent.setLastName(student.getLastName());
         return this.studentRepository.save(existingStudent);
