@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
+@RequestMapping("/student")
 public class StudentController {
 
     private final StudentService studentService;
@@ -25,7 +26,7 @@ public class StudentController {
         return "Server Started" ;
     }
 
-    @PostMapping("/student/add")
+    @PostMapping("/add")
     public ResponseEntity<?> addStudent(@RequestBody @Valid Student student){
         try {
             return ResponseEntity.ok(this.studentService.addStudent(student));
@@ -34,7 +35,7 @@ public class StudentController {
         }
     }
 
-    @GetMapping("/student/{sID}")
+    @GetMapping("/{sID}")
     public ResponseEntity<?> getStudentById(@PathVariable(name = "sID") long studentId){
         try {
             Student student = this.studentService.getStudentById(studentId);
@@ -47,7 +48,7 @@ public class StudentController {
         }
     }
 
-    @PutMapping("/student/{studentId}")
+    @PutMapping("/{studentId}")
     public ResponseEntity<?> updateStudent(@PathVariable long studentId,@RequestBody Student student){
         try{
             if (studentId != student.getId()){
@@ -62,7 +63,7 @@ public class StudentController {
         }
     }
 
-    @DeleteMapping("/student/{studentId}")
+    @DeleteMapping("/{studentId}")
     public ResponseEntity<?> deleteStudentById(@PathVariable long studentId){
         try{
             this.studentService.deleteStudentById(studentId);
