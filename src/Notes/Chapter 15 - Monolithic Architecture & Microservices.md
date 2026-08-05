@@ -1003,4 +1003,3 @@ Best for Large Applications
 - [x] Disadvantages
 - [x] Monolithic vs Microservices
 - [x] Real-World Examples
-- [x] Interview Questions
