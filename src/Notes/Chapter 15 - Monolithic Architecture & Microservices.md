@@ -1001,4 +1001,3 @@ Best for Large Applications
 - [x] Database Strategy
 - [x] Advantages
 - [x] Disadvantages
-- [x] Monolithic vs Microservices
