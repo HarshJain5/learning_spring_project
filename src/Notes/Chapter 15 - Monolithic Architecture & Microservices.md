@@ -1000,4 +1000,3 @@ Best for Large Applications
 - [x] Service Discovery
 - [x] Database Strategy
 - [x] Advantages
-- [x] Disadvantages
