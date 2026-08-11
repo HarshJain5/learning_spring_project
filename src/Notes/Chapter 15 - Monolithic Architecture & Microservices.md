@@ -999,4 +999,3 @@ Best for Large Applications
 - [x] API Gateway
 - [x] Service Discovery
 - [x] Database Strategy
-- [x] Advantages
