@@ -998,4 +998,3 @@ Best for Large Applications
 - [x] Microservices
 - [x] API Gateway
 - [x] Service Discovery
-- [x] Database Strategy
