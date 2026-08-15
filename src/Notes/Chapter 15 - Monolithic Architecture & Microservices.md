@@ -997,4 +997,3 @@ Best for Large Applications
 - [x] Monolithic Architecture
 - [x] Microservices
 - [x] API Gateway
-- [x] Service Discovery
