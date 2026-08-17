@@ -996,4 +996,3 @@ Best for Large Applications
 - [x] Software Architecture
 - [x] Monolithic Architecture
 - [x] Microservices
-- [x] API Gateway
