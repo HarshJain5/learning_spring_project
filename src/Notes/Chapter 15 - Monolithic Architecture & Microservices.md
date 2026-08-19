@@ -994,4 +994,3 @@ Best for Large Applications
 # Progress
 
 - [x] Software Architecture
-- [x] Monolithic Architecture
