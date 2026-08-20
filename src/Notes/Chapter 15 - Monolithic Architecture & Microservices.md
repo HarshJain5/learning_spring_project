@@ -992,5 +992,3 @@ Best for Large Applications
 ---
 
 # Progress
-
-- [x] Software Architecture
